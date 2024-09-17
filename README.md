@@ -26,7 +26,7 @@ You can find the specific scores [here].
 ## Architectural Components of 69 Models
 
 To explore what architectural components cause architectural differences, we investigate 13 sub-components of 69 ImageNet classification models.
-You can find the list of models and their features [here].
+You can find the list of models and their features [here](https://github.com/J-H-Hwang/SAT/blob/main/Model%20Feature_release.csv).
 Note that we follow the corresponding paper and [timm library](https://github.com/huggingface/pytorch-image-models) to list model features.
 
 
