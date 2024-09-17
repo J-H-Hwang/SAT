@@ -21,7 +21,7 @@ input $x$, and $\varepsilon_s$ is a small scalar value.
 ## SAT of 69 Models
 
 Using SAT, we could gain similarity scores between two models among 69 models.
-You can find the specific scores [here].
+You can find the specific scores [here](https://github.com/J-H-Hwang/SAT/blob/main/SAT_release.csv).
 
 ## Architectural Components of 69 Models
 
