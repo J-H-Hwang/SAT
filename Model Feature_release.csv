@@ -1,0 +1,70 @@
+Model name,Base architecture,Hierarchical structure,Stem layer,Input resolution,Normalization,Activation,Pooling (stem),Pooling (final),2D SA,CW attention,Location of CW attention,DW conv,Group conv
+botnet26t_256,CNN,Yes,3s2/3/3,256 x 256,BN,ReLU,Yes,GAP,Yes (BoT),No,~,No,No
+convmixer_1536_20,CNN,Yes,7s7,224 x 224,BN,GeLU,No,GAP,No,No,~,Yes,No
+convnext_tiny,CNN,Yes,4s4,224 x 224,LN,GeLU,No,GAP,No,No,~,Yes,No
+cspdarknet53,CNN,Yes,3s1,256 x 256,BN,Leaky ReLU,No,GAP,No,No,~,No,No
+cspresnet50,CNN,Yes,7s2,256 x 256,BN,Leaky ReLU,Yes,GAP,No,No,~,No,No
+cspresnext50,CNN,Yes,7s2,256 x 256,BN,Leaky ReLU,Yes,GAP,No,No,~,No,Yes
+dla102x2,CNN,Yes,7s1,224 x 224,BN,ReLU,No,GAP,No,No,~,No,Yes
+dpn107,CNN,Yes,7s2,224 x 224,BN,ReLU,Yes,GAP,No,No,~,No,Yes
+eca_botnext26ts_256,CNN,Yes,3s2/3/3,256 x 256,BN,SiLU,Yes,GAP,Yes (BoT),Yes (ECA),Middle,No,Yes
+eca_halonext26ts,CNN,Yes,3s2/3/3,256 x 256,BN,SiLU,Yes,GAP,Yes (Halo),Yes (ECA),Middle,No,Yes
+eca_nfnet_l0,CNN,Yes,3s2/3/3/3s2,224 x 224,Norm-free,SiLU,No,GAP,No,Yes (ECA),End,No,Yes
+eca_resnet33ts,CNN,Yes,3s2/3/3s2,256 x 256,BN,SiLU,No,GAP,No,Yes (ECA),Middle,No,No
+ese_vovnet39b,CNN,Yes,3s2/3/3s2,224 x 224,BN,ReLU,No,GAP,No,Yes (ESE),End,No,No
+gcresnet50t,CNN,Yes,3s2/3/3s2,256 x 256,LN + BN,ReLU,No,GAP,No,Yes (GCA),Middle,Yes,No
+gcresnext50ts,CNN,Yes,3s2/3/3,256 x 256,LN + BN,ReLU + SiLU,Yes,GAP,No,Yes (GCA),Middle,Yes,Yes
+gluon_resnet101_v1c,CNN,Yes,3s2/3/3,224 x 224,BN,ReLU,Yes,GAP,No,No,~,No,No
+gluon_xception65,CNN,Yes,3s2/3,299 x 299,BN,ReLU,No,GAP,No,No,~,Yes,No
+halo2botnet50ts_256,CNN,Yes,3s2/3/3s2,256 x 256,BN,SiLU,No,GAP,"Yes (Halo, BoT)",No,~,No,No
+halonet50ts,CNN,Yes,3s2/3/3,256 x 256,BN,SiLU,Yes,GAP,Yes (Halo),No,~,No,No
+hrnet_w64,CNN,Yes,3s2/3s2,224 x 224,BN,ReLU,No,GAP,No,No,~,No,No
+lambda_resnet50ts,CNN,Yes,3s2/3/3,256 x 256,BN,SiLU,Yes,GAP,Yes (Lambda),No,~,No,No
+lamhalobotnet50ts_256,CNN,Yes,3s2/3/3s2,256 x 256,BN,SiLU,No,GAP,"Yes (Lambda, Halo, BoT)",No,~,No,No
+nf_resnet50,CNN,Yes,7s2,256 x 256,Norm-free,ReLU,Yes,GAP,No,No,~,No,No
+nfnet_l0,CNN,Yes,3s2/3/3/3s2,224 x 224,Norm-free,ReLU + SiLU,No,GAP,No,Yes (SE),End,No,Yes
+poolformer_m48,CNN,Yes,7s4,224 x 224,GN,GeLU,No,GAP,No,No,~,No,No
+resnest50d,CNN,Yes,3s2/3/3,224 x 224,BN,ReLU,Yes,GAP,No,Yes,~,No,Yes
+resnet101,CNN,Yes,7s2,224 x 224,BN,ReLU,Yes,GAP,No,No,~,No,No
+resnet50,CNN,Yes,7s2,224 x 224,BN,ReLU,Yes,GAP,No,No,~,No,No
+resnet50_gn,CNN,Yes,7s2,224 x 224,GN,ReLU,Yes,GAP,No,No,~,No,No
+resnetblur50,CNN,Yes,7s2,224 x 224,BN,ReLU,Yes,GAP,No,No,~,No,No
+resnetv2_101,CNN,Yes,7s2,224 x 224,BN,ReLU,Yes,GAP,No,No,~,No,No
+resnetv2_50,CNN,Yes,7s2,224 x 224,BN,ReLU,Yes,GAP,No,No,~,No,No
+resnetv2_50d_evos,CNN,Yes,3s2/3/3,224 x 224,EvoNorm,-,Yes,GAP,No,No,~,No,No
+resnext50_32x4d,CNN,Yes,7s2,224 x 224,BN,ReLU,Yes,GAP,No,No,~,No,Yes
+sebotnet33ts_256,CNN,Yes,3s2/3/3s2,256 x 256,BN,ReLU + SiLU,No,GAP,Yes (BoT),Yes (SE),Middle,No,No
+sehalonet33ts,CNN,Yes,3s2/3/3s2,256 x 256,BN,ReLU + SiLU,No,GAP,Yes (Halo),Yes (SE),Middle,No,No
+seresnet50,CNN,Yes,7s2,224 x 224,BN,ReLU,Yes,GAP,No,Yes (SE),End,No,No
+seresnext50_32x4d,CNN,Yes,7s2,224 x 224,BN,ReLU,Yes,GAP,No,Yes (SE),End,No,Yes
+wide_resnet50_2,CNN,Yes,7s2,224 x 224,BN,ReLU,Yes,GAP,No,No,~,No,No
+convit_base,Transformer,No,16s16,224 x 224,LN,GeLU,No,CLS token,No,No,~,No,No
+crossvit_base_240,Transformer,Yes,16s16,240 x 240,LN,GeLU,No,CLS token,No,No,~,No,No
+deit_base_patch16_224,Transformer,No,16s16,224 x 224,LN,GeLU,No,CLS token,No,No,~,No,No
+deit_small_patch16_224,Transformer,No,16s16,224 x 224,LN,GeLU,No,CLS token,No,No,~,No,No
+jx_nest_tiny,Transformer,Yes,4s4,224 x 224,LN,GeLU,No,GAP,No,No,~,No,No
+pit_s_224,Transformer,Yes,16s8,224 x 224,LN,GeLU,No,CLS token,No,No,~,Yes,No
+swin_tiny_patch4_window7_224,Transformer,Yes,4s4,224 x 224,LN,GeLU,No,GAP,No,No,~,No,No
+tnt_s_patch16_224,Transformer,Yes,7s4,224 x 224,LN,GeLU,No,CLS token,No,No,~,No,No
+vit_base_patch32_224,Transformer,No,32s32,224 x 224,LN,GeLU,No,CLS token,No,No,~,No,No
+vit_small_patch16_224,Transformer,No,16s16,224 x 224,LN,GeLU,No,CLS token,No,No,~,No,No
+gmlp_s16_224,MLP-Mixer,Yes,16s16,224 x 224,LN,GeLU,No,GAP,No,No,~,No,No
+resmlp_24_224,MLP-Mixer,No,16s16,224 x 224,Affine transform,GeLU,No,GAP,No,No,~,No,No
+resmlp_big_24_224,MLP-Mixer,Yes,8s8,224 x 224,Affine transform,GeLU,No,GAP,No,No,~,No,No
+swin_s3_tiny_224,NAS (TFM),Yes,4s4,224 x 224,LN,GeLU,No,GAP,No,No,~,No,No
+efficientnet_b2,NAS (CNN),Yes,3s2,256 x 256,BN,SiLU,No,GAP,No,Yes (SE),Middle,Yes,No
+fbnetv3_g,NAS (CNN),Yes,3s2,240 x 240,BN,HardSwish,No,GAP,No,Yes (SE),Middle,Yes,No
+haloregnetz_b,NAS (CNN),Yes,3s2,224 x 224,BN,ReLU + SiLU,No,GAP,Yes (Halo),Yes (SE),Middle,No,Yes
+mixnet_xl,NAS (CNN),Yes,3s2,224 x 224,BN,ReLU + SiLU,No,GAP,No,Yes (SE),Middle,Yes,No
+nf_regnet_b1,NAS (CNN),Yes,3s2,256 x 256,Norm-free,ReLU + SiLU,No,GAP,No,Yes (SE),Middle,Yes,Yes
+regnetx_320,NAS (CNN),Yes,3s2,224 x 224,BN,ReLU,No,GAP,No,No,~,No,Yes
+regnety_032,NAS (CNN),Yes,3s2,224 x 224,BN,ReLU,No,GAP,No,Yes (SE),Middle,No,Yes
+rexnet_150,NAS (CNN),Yes,3s2,224 x 224,BN,ReLU + SiLU + ReLU6,No,GAP,No,Yes (SE),Middle,Yes,No
+coat_lite_small,Hybrid,Yes,4s4,224 x 224,LN,GeLU,No,CLS token,No,No,~,Yes,No
+pit_b_224,Hybrid,Yes,14s7,224 x 224,LN,GeLU,No,CLS token,No,No,~,Yes,No
+twins_pcpvt_base,Hybrid,Yes,4s4,224 x 224,LN,GeLU,No,GAP,No,No,~,Yes,No
+twins_svt_small,Hybrid,Yes,4s4,224 x 224,LN,GeLU,No,GAP,No,No,~,Yes,No
+visformer_small,Hybrid,Yes,7s2,224 x 224,BN,GeLU + ReLU,No,GAP,No,No,~,No,Yes
+vit_small_r26_s32_224,Hybrid,No,7s2,224 x 224,LN + GN,GeLU + ReLU,Yes,CLS token,No,No,~,No,No
+xcit_medium_24_p16_224,Hybrid,No,3s2/3s2/3s2/3s2,224 x 224,LN + BN,GeLU,No,CLS token,No,No,~,Yes,No
+xcit_tiny_12_p8_224,Hybrid,No,3s2/3s2/3s2,224 x 224,LN + BN,GeLU,No,CLS token,No,No,~,Yes,No
