@@ -20,13 +20,13 @@ input $x$, and $\varepsilon_s$ is a small scalar value.
 
 ## SAT of 69 Models
 
-Using SAT, we could gain similarity scores between two models among 69 models.
-You can find the specific scores [here](https://github.com/J-H-Hwang/SAT/blob/main/SAT_release.csv).
+Using SAT, we computed similarity scores between pairs of models from 69 models.
+The detailed scores can be found [here](https://github.com/J-H-Hwang/SAT/blob/main/SAT_release.csv).
 
 ## Architectural Components of 69 Models
 
-To explore what architectural components cause architectural differences, we investigate 13 sub-components of 69 ImageNet classification models.
-You can find the list of models and their features [here](https://github.com/J-H-Hwang/SAT/blob/main/Model%20Feature_release.csv).
-Note that we follow the corresponding paper and [timm library](https://github.com/huggingface/pytorch-image-models) to list model features.
+To explore what architectural components cause architectural differences, we examine 13 sub-components of 69 ImageNet classification models.
+A detailed list of the models and their features is available [here](https://github.com/J-H-Hwang/SAT/blob/main/Model%20Feature_release.csv).
+Note that we follow the corresponding paper and the [timm library](https://github.com/huggingface/pytorch-image-models) to list model features.
 
 
